@@ -34,5 +34,5 @@ Stages{
 		echo 'Build failure'
 		}
 		}
-		}
+		
 			
