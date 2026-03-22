@@ -13,7 +13,8 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install'  // Run Maven build
+                sh 'mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean install'
+    }
             }
         }
 
